@@ -8,5 +8,15 @@
       <jdbc-url>jdbc:postgresql://dpg-d3fgirmmcj7s738uitn0-a.oregon-postgres.render.com:5432/postgre_jq7v</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="@oregon-keyvalue.render.com" uuid="f8b9eb79-3043-4a4c-9769-d276dec59116">
+      <driver-ref>redis</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>jdbc.RedisDriver</jdbc-driver>
+      <jdbc-url>jdbc:redis://oregon-keyvalue.render.com:6379?ssl=true&amp;password=PBJkctEuHSuq9Zp05nWMjIYSTObmGHh4</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+      <driver-properties>
+        <property name="verifyConnectionMode" value="false" />
+      </driver-properties>
+    </data-source>
   </component>
 </project>
